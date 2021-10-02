@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import time
-from sklearn.datasets import fetch_openml
+
 
 class NeuralNetwork:
     """
@@ -183,8 +183,8 @@ if __name__ == "__main__":
     score = {}
     for i in ['tanh', 'logistic', 'relu', 'elu', 'prelu']:
         sta = time.time()
-        mlp = NeuralNetwork([X.shape[1], 3, 3, 1], 0.01, activation=i)
-        mlp.fit(X[:N-3], y[:N-3], 1000, 100)
+        mlp = NeuralNetwork([X.shape[1], 3, 1], 0.01, activation=i)
+        mlp.fit(X[:N-3], y[:N-3], 3000, 100)
         score[i] = [mlp.score(X[N-3:], y[N-3:]), mlp.loss(y[N-3:], mlp.predict(X[N-3:])), time.time() - sta]
 
     for i in score:
