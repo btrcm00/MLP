@@ -37,10 +37,10 @@
 #### ReLU
 
 - Defining:
-<div align="center"><img src="img\ReLU.jpg"></div>
+<div align="center"><img src="img\relu.jpg"></div>
 
 - Derivative:
-<div align="center"><img src="img\derivative-ReLU.jpg"></div>
+<div align="center"><img src="img\derivative-relu.jpg"></div>
 
 - Cons:
   - No matter what for negative values neuron is completely inactive.
@@ -53,10 +53,10 @@
 #### PReLU
 
 - Defining:
-<div align="center"><img src="img\prelu.jpg"></div>
+<div align="center"><img src="img\pReLU.jpg"></div>
 
 - Derivative:
-<div align="center"><img src="img\derivative-prelu.jpg"></div>
+<div align="center"><img src="img\derivative-pReLU.jpg"></div>
 
 - Cons:
   - it can’t be used for the complex Classification. It lags behind the Sigmoid and Tanh for some of the use cases.
